@@ -1,0 +1,20 @@
+{
+ "id": "09_breathing_only",
+ "desc": "整段只有轻微呼吸声，中间完全安静 20 秒，从头到尾不打呼 → 0 打呼 0 停顿",
+ "durationSec": 600,
+ "wav": "out/09_breathing_only.wav",
+ "labels": "labels/09_breathing_only.labels.json",
+ "runs": [
+  {
+   "args": {},
+   "expect": {
+    "pauses": [],
+    "snoreSec": {
+     "value": 0,
+     "tol": 0
+    },
+    "healthNotice": false
+   }
+  }
+ ]
+}

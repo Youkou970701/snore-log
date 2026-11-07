@@ -1,0 +1,21 @@
+# 构建产物
+.build/
+.swiftpm/
+DerivedData/
+*.xcresult
+xcuserdata/
+*.xcuserstate
+__pycache__/
+.DS_Store
+
+# 本机签名（团队编号、包名前缀）
+ios/Config/Local.xcconfig
+
+# 测试与验收过程日志（含本机路径）
+*.log
+core/Validation/*
+!core/Validation/classifier-probe.swift
+
+# 验收样本：合成音频可随时 python3 fixtures/gen.py 重新生成；真实夜间录音含隐私，永不提交
+fixtures/out/
+fixtures/real/

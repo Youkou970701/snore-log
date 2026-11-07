@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 71;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000000021 /* SnoreCore in Frameworks */ = {isa = PBXBuildFile; productRef = 00000000000000000000001F /* SnoreCore */; };
+		000000000000000000000022 /* SnoreCore in Frameworks */ = {isa = PBXBuildFile; productRef = 000000000000000000000020 /* SnoreCore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		000000000000000000000024 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000000000000000005;
+			remoteInfo = SnoreLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000008 /* SnoreLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = SnoreLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000009 /* Config/Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config/Base.xcconfig; sourceTree = "<group>"; };
+		00000000000000000000000B /* SnoreLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SnoreLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000032 /* SnoreLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SnoreLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		00000000000000000000000A /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 000000000000000000000005 /* SnoreLog */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		000000000000000000000003 /* SnoreLog */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (00000000000000000000000A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = SnoreLog; sourceTree = "<group>"; };
+		000000000000000000000004 /* SnoreLogTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SnoreLogTests; sourceTree = "<group>"; };
+		000000000000000000000031 /* SnoreLogUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SnoreLogUITests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00000000000000000000000D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000021 /* SnoreCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000022 /* SnoreCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000031 /* SnoreLogUITests */,
+				000000000000000000000003 /* SnoreLog */,
+				000000000000000000000004 /* SnoreLogTests */,
+				000000000000000000000007 /* Products */,
+				000000000000000000000009 /* Config/Base.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000032 /* SnoreLogUITests.xctest */,
+				000000000000000000000008 /* SnoreLog.app */,
+				00000000000000000000000B /* SnoreLogTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000005 /* SnoreLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000014 /* Build configuration list for PBXNativeTarget "SnoreLog" */;
+			buildPhases = (
+				00000000000000000000000C /* Sources */,
+				00000000000000000000000D /* Frameworks */,
+				00000000000000000000000E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				000000000000000000000003 /* SnoreLog */,
+			);
+			name = SnoreLog;
+			packageProductDependencies = (
+				00000000000000000000001F /* SnoreCore */,
+			);
+			productName = SnoreLog;
+			productReference = 000000000000000000000008 /* SnoreLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		000000000000000000000006 /* SnoreLogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000015 /* Build configuration list for PBXNativeTarget "SnoreLogTests" */;
+			buildPhases = (
+				00000000000000000000000F /* Sources */,
+				000000000000000000000010 /* Frameworks */,
+				000000000000000000000011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000000000000000000000023 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				000000000000000000000004 /* SnoreLogTests */,
+			);
+			name = SnoreLogTests;
+			packageProductDependencies = (
+				000000000000000000000020 /* SnoreCore */,
+			);
+			productName = SnoreLogTests;
+			productReference = 00000000000000000000000B /* SnoreLogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		000000000000000000000030 /* SnoreLogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000033 /* Build configuration list for PBXNativeTarget "SnoreLogUITests" */;
+			buildPhases = (
+				000000000000000000000036 /* Sources */,
+				000000000000000000000037 /* Frameworks */,
+				000000000000000000000038 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000000000000000000000023 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				000000000000000000000031 /* SnoreLogUITests */,
+			);
+			name = SnoreLogUITests;
+			productName = SnoreLogUITests;
+			productReference = 000000000000000000000032 /* SnoreLogUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					000000000000000000000006 = {
+						TestTargetID = 000000000000000000000005;
+					};
+				};
+			};
+			buildConfigurationList = 000000000000000000000016 /* Build configuration list for PBXProject "SnoreLog" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 000000000000000000000002;
+			packageReferences = (
+				00000000000000000000001E /* XCLocalSwiftPackageReference "../core" */,
+			);
+			productRefGroup = 000000000000000000000007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000005 /* SnoreLog */,
+				000000000000000000000006 /* SnoreLogTests */,
+				000000000000000000000030 /* SnoreLogUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00000000000000000000000E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000038 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00000000000000000000000C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00000000000000000000000F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000036 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		000000000000000000000023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 000000000000000000000005 /* SnoreLog */;
+			targetProxy = 000000000000000000000024 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		000000000000000000000028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000000000000000000009 /* Config/Base.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SnoreLog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).snorelog";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		000000000000000000000029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000000000000000000009 /* Config/Base.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SnoreLog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).snorelog";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		00000000000000000000002A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).snorelog.tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnoreLog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SnoreLog";
+			};
+			name = Debug;
+		};
+		00000000000000000000002B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).snorelog.tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnoreLog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SnoreLog";
+			};
+			name = Release;
+		};
+		00000000000000000000002C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_TESTABILITY = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		00000000000000000000002D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_TESTABILITY = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		000000000000000000000034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).snorelog.uitests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = SnoreLog;
+			};
+			name = Debug;
+		};
+		000000000000000000000035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).snorelog.uitests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = SnoreLog;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000000000014 /* Build configuration list for PBXNativeTarget "SnoreLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000028 /* Debug */,
+				000000000000000000000029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000015 /* Build configuration list for PBXNativeTarget "SnoreLogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000002A /* Debug */,
+				00000000000000000000002B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000016 /* Build configuration list for PBXProject "SnoreLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000002C /* Debug */,
+				00000000000000000000002D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000033 /* Build configuration list for PBXNativeTarget "SnoreLogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000034 /* Debug */,
+				000000000000000000000035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		00000000000000000000001E /* XCLocalSwiftPackageReference "../core" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../core;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		00000000000000000000001F /* SnoreCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00000000000000000000001E /* XCLocalSwiftPackageReference "../core" */;
+			productName = SnoreCore;
+		};
+		000000000000000000000020 /* SnoreCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00000000000000000000001E /* XCLocalSwiftPackageReference "../core" */;
+			productName = SnoreCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}

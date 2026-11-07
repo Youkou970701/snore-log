@@ -1,0 +1,19 @@
+{
+ "id": "06_tv_speech",
+ "desc": "电视说话，句子之间停 11–16 秒（停完再大声说话），没有打呼 → 0 打呼 0 停顿",
+ "durationSec": 300,
+ "wav": "out/06_tv_speech.wav",
+ "labels": "labels/06_tv_speech.labels.json",
+ "runs": [
+  {
+   "args": {},
+   "expect": {
+    "pauses": [],
+    "snoreSec": {
+     "value": 0,
+     "tol": 0
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "id": "07_cough_door",
+ "desc": "打呼中咳嗽一声；不打呼 2 分钟后关门一声。打呼音量统计不应被咳嗽和关门拉高，也不算停顿",
+ "durationSec": 420,
+ "wav": "out/07_cough_door.wav",
+ "labels": "labels/07_cough_door.labels.json",
+ "runs": [
+  {
+   "args": {},
+   "expect": {
+    "pauses": [],
+    "snoreP95Db": {
+     "min": 47,
+     "max": 55
+    },
+    "envelopeMax": {
+     "min": 58
+    }
+   }
+  }
+ ]
+}

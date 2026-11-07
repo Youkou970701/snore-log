@@ -1,0 +1,16 @@
+{
+ "id": "03_quiet_9s",
+ "desc": "打呼中安静 9 秒后接着打（不到 10 秒，不算停顿；超过 8 秒，拆成两段）",
+ "durationSec": 300,
+ "wav": "out/03_quiet_9s.wav",
+ "labels": "labels/03_quiet_9s.labels.json",
+ "runs": [
+  {
+   "args": {},
+   "expect": {
+    "pauses": [],
+    "snoreRunsCount": 2
+   }
+  }
+ ]
+}

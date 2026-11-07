@@ -1,0 +1,20 @@
+{
+ "id": "02_stop_long_quiet",
+ "desc": "打呼 3 分钟 → 安静 5 分钟（翻身不打了）→ 又打呼。安静超过 90 秒不算停顿（R6④）",
+ "durationSec": 600,
+ "wav": "out/02_stop_long_quiet.wav",
+ "labels": "labels/02_stop_long_quiet.labels.json",
+ "runs": [
+  {
+   "args": {},
+   "expect": {
+    "pauses": [],
+    "healthNotice": false,
+    "longestQuietGap": {
+     "durationSec": 302,
+     "tol": 4
+    }
+   }
+  }
+ ]
+}

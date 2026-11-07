@@ -1,0 +1,28 @@
+{
+ "id": "01_basic_pause",
+ "desc": "打呼 3 分钟 → 安静 15 秒 → 大喘一声 → 继续打呼",
+ "durationSec": 360,
+ "wav": "out/01_basic_pause.wav",
+ "labels": "labels/01_basic_pause.labels.json",
+ "runs": [
+  {
+   "args": {},
+   "expect": {
+    "pauses": [
+     {
+      "startSec": 177,
+      "durationSec": 15,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     }
+    ],
+    "healthNotice": true,
+    "longestSnoreRun": {
+     "durationSec": 175,
+     "tol": 6
+    }
+   }
+  }
+ ]
+}

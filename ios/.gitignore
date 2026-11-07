@@ -1,0 +1,7 @@
+Config/Local.xcconfig
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.build/
+.swiftpm/
+Config/*.log

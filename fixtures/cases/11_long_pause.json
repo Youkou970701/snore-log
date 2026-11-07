@@ -1,0 +1,24 @@
+{
+ "id": "11_long_pause",
+ "desc": "15 分钟里只有 1 次停顿但长达 32 秒（4 次/小时不到 5）→ 仅凭 ≥30 秒触发健康提示",
+ "durationSec": 900,
+ "wav": "out/11_long_pause.wav",
+ "labels": "labels/11_long_pause.labels.json",
+ "runs": [
+  {
+   "args": {},
+   "expect": {
+    "pauses": [
+     {
+      "startSec": 399,
+      "durationSec": 32,
+      "bucket": "30+",
+      "recoveryType": "gasp",
+      "tol": 2
+     }
+    ],
+    "healthNotice": true
+   }
+  }
+ ]
+}

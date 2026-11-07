@@ -1,0 +1,27 @@
+{
+ "id": "05_fan_onset",
+ "desc": "安静 5 分钟（30 dB）→ 开风扇（45 dB）11 分钟不打呼 → 风扇下打呼 55 dB，中间停 12 秒+大喘",
+ "durationSec": 1500,
+ "wav": "out/05_fan_onset.wav",
+ "labels": "labels/05_fan_onset.labels.json",
+ "runs": [
+  {
+   "args": {},
+   "expect": {
+    "pauses": [
+     {
+      "startSec": 1196,
+      "durationSec": 12,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     }
+    ],
+    "snoreSecBefore": {
+     "sec": 960,
+     "value": 0
+    }
+   }
+  }
+ ]
+}

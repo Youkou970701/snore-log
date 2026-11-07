@@ -1,0 +1,31 @@
+{
+ "id": "13_four_per_hour",
+ "desc": "30 分钟 2 次停顿（15、22 秒）= 4 次/小时，都不到 30 秒 → 不触发健康提示",
+ "durationSec": 1800,
+ "wav": "out/13_four_per_hour.wav",
+ "labels": "labels/13_four_per_hour.labels.json",
+ "runs": [
+  {
+   "args": {},
+   "expect": {
+    "pauses": [
+     {
+      "startSec": 599,
+      "durationSec": 15,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     },
+     {
+      "startSec": 1297,
+      "durationSec": 22,
+      "bucket": "20-30",
+      "recoveryType": "gasp",
+      "tol": 2
+     }
+    ],
+    "healthNotice": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "id": "07b_door_known_fp",
+ "desc": "【已知误报】打呼停了 12 秒后关门 → 按 R6 规则会算 1 次停顿（关门声被当成大喘）。用于确认规则按文档执行，03 期真机再决定要不要靠分类器排除",
+ "durationSec": 300,
+ "wav": "out/07b_door_known_fp.wav",
+ "labels": "labels/07b_door_known_fp.labels.json",
+ "runs": [
+  {
+   "args": {},
+   "expect": {
+    "pauses": [
+     {
+      "startSec": 177,
+      "durationSec": 12,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     }
+    ]
+   }
+  }
+ ]
+}

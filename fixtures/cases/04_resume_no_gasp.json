@@ -1,0 +1,23 @@
+{
+ "id": "04_resume_no_gasp",
+ "desc": "安静 14 秒后没有大喘，直接以正常音量接着打呼 → 1 次停顿，恢复方式 resumeSnore",
+ "durationSec": 400,
+ "wav": "out/04_resume_no_gasp.wav",
+ "labels": "labels/04_resume_no_gasp.labels.json",
+ "runs": [
+  {
+   "args": {},
+   "expect": {
+    "pauses": [
+     {
+      "startSec": 176,
+      "durationSec": 14,
+      "bucket": "10-20",
+      "recoveryType": "resumeSnore",
+      "tol": 2
+     }
+    ]
+   }
+  }
+ ]
+}

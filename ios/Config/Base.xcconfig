@@ -1,0 +1,4 @@
+// 公共配置。个人签名信息放在 Local.xcconfig（不进 git），见 Local.example.xcconfig。
+DEVELOPMENT_TEAM =
+BUNDLE_ID_PREFIX = com.example
+#include? "Local.xcconfig"

@@ -1,0 +1,35 @@
+{
+ "id": "10_gap_alarm",
+ "desc": "打呼到 294 秒→安静→第 300 秒中断 60 秒（来电）→恢复后安静 6 秒再一声大喘；第 480 秒闹钟响（之后不计）。中断不能当成安静拼起来算停顿",
+ "durationSec": 600,
+ "wav": "out/10_gap_alarm.wav",
+ "labels": "labels/10_gap_alarm.labels.json",
+ "runs": [
+  {
+   "args": {
+    "gapAt": [
+     [
+      300,
+      60
+     ]
+    ],
+    "alarmAt": 480
+   },
+   "expect": {
+    "pauses": [],
+    "gapSec": {
+     "value": 60,
+     "tol": 0
+    },
+    "analyzedSec": {
+     "value": 480,
+     "tol": 1
+    },
+    "recordedSec": {
+     "value": 660,
+     "tol": 1
+    }
+   }
+  }
+ ]
+}

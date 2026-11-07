@@ -1,0 +1,160 @@
+{
+ "id": "12_frequent",
+ "desc": "20 分钟 6 次停顿（12–18 秒）= 18 次/小时 → 健康提示；另跑「延迟 10 分钟」只算后 3 次、闹钟切在大喘上、中断切在停顿前",
+ "durationSec": 1200,
+ "wav": "out/12_frequent.wav",
+ "labels": "labels/12_frequent.labels.json",
+ "runs": [
+  {
+   "args": {},
+   "expect": {
+    "pauses": [
+     {
+      "startSec": 97,
+      "durationSec": 12,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     },
+     {
+      "startSec": 277,
+      "durationSec": 15,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     },
+     {
+      "startSec": 447,
+      "durationSec": 18,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     },
+     {
+      "startSec": 698,
+      "durationSec": 13,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     },
+     {
+      "startSec": 880,
+      "durationSec": 16,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     },
+     {
+      "startSec": 1047,
+      "durationSec": 12,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     }
+    ],
+    "healthNotice": true
+   }
+  },
+  {
+   "args": {
+    "delay": 600
+   },
+   "expect": {
+    "pauses": [
+     {
+      "startSec": 698,
+      "durationSec": 13,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     },
+     {
+      "startSec": 880,
+      "durationSec": 16,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     },
+     {
+      "startSec": 1047,
+      "durationSec": 12,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     }
+    ],
+    "healthNotice": true,
+    "analyzedSec": {
+     "value": 600,
+     "tol": 1
+    }
+   }
+  },
+  {
+   "args": {
+    "alarmAt": 290
+   },
+   "expect": {
+    "pauses": [
+     {
+      "startSec": 97,
+      "durationSec": 12,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     }
+    ]
+   }
+  },
+  {
+   "args": {
+    "gapAt": [
+     [
+      285,
+      5
+     ],
+     [
+      700,
+      120
+     ]
+    ]
+   },
+   "expect": {
+    "pauses": [
+     {
+      "startSec": 97,
+      "durationSec": 12,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     },
+     {
+      "startSec": 452,
+      "durationSec": 18,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     },
+     {
+      "startSec": 1005,
+      "durationSec": 16,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     },
+     {
+      "startSec": 1172,
+      "durationSec": 12,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     }
+    ],
+    "gapSec": {
+     "value": 125,
+     "tol": 0
+    }
+   }
+  }
+ ]
+}

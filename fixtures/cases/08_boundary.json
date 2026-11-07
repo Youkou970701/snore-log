@@ -1,0 +1,24 @@
+{
+ "id": "08_boundary",
+ "desc": "停顿正好跨第 120 秒的分段边界；整段喂 / 每 120 秒 / 每 7 秒喂，结果必须一样",
+ "durationSec": 360,
+ "wav": "out/08_boundary.wav",
+ "labels": "labels/08_boundary.labels.json",
+ "runs": [
+  {
+   "args": {},
+   "expect": {
+    "pauses": [
+     {
+      "startSec": 112,
+      "durationSec": 15,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     }
+    ]
+   },
+   "chunkInvariant": true
+  }
+ ]
+}

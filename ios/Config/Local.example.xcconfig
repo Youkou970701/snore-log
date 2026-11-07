@@ -1,0 +1,6 @@
+// 复制成 Local.xcconfig 后填上你自己的信息（Local.xcconfig 不进 git）。
+// DEVELOPMENT_TEAM：Xcode → Settings → Accounts 登录 Apple ID 后，在工程 Signing & Capabilities 里选 Personal Team，
+//   或在钥匙串「Apple Development」证书里看到的 10 位团队编号。
+// BUNDLE_ID_PREFIX：随便一个你独有的前缀（免费 Apple ID 要求包名全球唯一），比如 com.你的名字。
+DEVELOPMENT_TEAM =
+BUNDLE_ID_PREFIX = com.yourname

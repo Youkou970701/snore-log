@@ -1,0 +1,92 @@
+{
+ "id": "14_composite_90min",
+ "desc": "90 分钟组合夜：前 10 分钟醒着（咳嗽、关门）→ 打呼段含 3 次停顿 → 安静 15 分钟 → 连续打呼约 30 分钟（含 60 dB、62 dB 两个响段）→ 4 次停顿。考留存池：7 个停顿段必须全留、总数 ≤12；7 次/1.5 小时 = 4.7 次/小时，差一点不到 5 → 不触发健康提示",
+ "durationSec": 5400,
+ "wav": "out/14_composite_90min.wav",
+ "labels": "labels/14_composite_90min.labels.json",
+ "runs": [
+  {
+   "args": {},
+   "expect": {
+    "pauses": [
+     {
+      "startSec": 769,
+      "durationSec": 14,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     },
+     {
+      "startSec": 1127,
+      "durationSec": 18,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     },
+     {
+      "startSec": 1487,
+      "durationSec": 22,
+      "bucket": "20-30",
+      "recoveryType": "gasp",
+      "tol": 2
+     },
+     {
+      "startSec": 4489,
+      "durationSec": 12,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     },
+     {
+      "startSec": 4729,
+      "durationSec": 16,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     },
+     {
+      "startSec": 4967,
+      "durationSec": 25,
+      "bucket": "20-30",
+      "recoveryType": "gasp",
+      "tol": 2
+     },
+     {
+      "startSec": 5206,
+      "durationSec": 13,
+      "bucket": "10-20",
+      "recoveryType": "gasp",
+      "tol": 2
+     }
+    ],
+    "healthNotice": false,
+    "longestSnoreRun": {
+     "durationSec": 1789,
+     "tol": 8
+    },
+    "longestQuietGap": {
+     "durationSec": 900,
+     "tol": 8
+    },
+    "retained": {
+     "maxCount": 12,
+     "mustIncludeSegments": [
+      6,
+      9,
+      12,
+      37,
+      39,
+      41,
+      43
+     ],
+     "loudAnyOf": [
+      25,
+      26,
+      36
+     ]
+    }
+   },
+   "chunkInvariant": true
+  }
+ ]
+}
